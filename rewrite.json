@@ -1,0 +1,3 @@
+[
+	{"path":"rewrite/([A-z0-9\\-]+)", "rewrite":"/rewrite"}
+]

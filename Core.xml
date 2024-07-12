@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <database>
+        <host>localhost</host>
+        <username>root</username>
+        <password></password>
+        <dbname>flomsy</dbname>
+    </database>
+    <template>
+        <title>Default Title Page</title>
+        <folder>default</folder>
+        <plugins>Default</plugins>
+    </template>
+    <security>
+        <eval>false</eval>
+        <exec>false</exec>
+        <system>false</system>
+        <passthru>false</passthru>
+    </security>
+    <server>
+        <privatekey>91"d-3Ao1p^:sJY)@wnX`N!2-mNDDlNGor*H-;(9WMdaQLG60cvi-W></privatekey>
+    </server>
+</configuration>

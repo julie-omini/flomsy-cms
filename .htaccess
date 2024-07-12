@@ -1,0 +1,16 @@
+Options +FollowSymLinks -Indexes
+RewriteEngine On
+RewriteBase "/"
+RewriteCond %{QUERY_STRING} ^%ad [NC] # Patch 0Day XWAMP
+RewriteRule .? – [F,L]
+RewriteRule "favicon.ico" "share/images/favicon.ico" [L]
+RewriteCond "%{REQUEST_URI}" !=/index.php
+RewriteCond "%{REQUEST_URI}" !=/GenerateUpdate.php
+# RewriteCond %{REQUEST_URI} !\.(css|jpg|jpeg|png|gif|bmp|webp|ico|mp4|mp3)$ [NC]
+RewriteRule ^(.*)$ index.php [L,PT,QSA]
+
+
+<FilesMatch "Core.xml">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
